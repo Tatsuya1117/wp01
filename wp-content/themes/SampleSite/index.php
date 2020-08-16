@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="header_desc">
-				<p>サイトのキャッチフレーズ</p>
+				<p><?php bloginfo('description'); ?></p>
 			</div>
 
 			<form class="header_search">
