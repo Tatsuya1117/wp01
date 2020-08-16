@@ -16,7 +16,7 @@
 	<header class="header">
 		<div class="header_inner">
 			<div class="header_logo">
-				<h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
+				<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/Sample_Site.png" alt="BISTRO CALME"></a></h1>
 			</div>
 
 			<div class="header_desc">
@@ -62,9 +62,9 @@
 	</header>
 
 	<div class="jumbotron">
-		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-1@2x.jpg')"></div>
-		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-2@2x.jpg')"></div>
-		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-3@2x.jpg')"></div>
+		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/top_slider_00.jpg')"></div>
+		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/top_slider_01.jpg')"></div>
+		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/top_slider_02.jpg')"></div>
 	</div>
 
 	<section class="sec">
@@ -183,8 +183,8 @@
 				</div>
 				<div class="contact_body">
 					<p>
-						お気軽にお問い合わせください
-						<span>03-1234-5678</span>
+						お気軽にご相談ください。
+						<span>080-4464-3515</span>
 					</p>
 				</div>
 			</div>
