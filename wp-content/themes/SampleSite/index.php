@@ -10,6 +10,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
 					<article class="news">
 						<div class="news_pic">
 							<a href="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/news_img-1.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/news_img-1.jpg" alt="" class="fadein">
 							</a>
 						</div>
 						<div class="news_meta">
@@ -219,7 +220,21 @@
 	<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js"></script>
-
+	<script type="text/javascript">
+		$(function(){
+    	$(window).scroll(function (){
+        $('.fadein').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+					}
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
